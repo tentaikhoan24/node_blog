@@ -1,0 +1,25 @@
+<div class="">
+  <div class="row">
+    <div class="col-lg-2 border">
+        <button>Học ngay</button>
+    </div>
+    <ul>
+      <li>
+        {{this.level}}
+      </li>
+    </ul>
+    <div class="col-lg-10">
+      <h2>{{this.name}}</h2>
+        <iframe
+          width="750"
+          height="422"
+          src="https://www.youtube.com/embed/{{this.videoID}}"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <h4>{{this.description}}</h4>
+    </div>
+  </div>
+</div>

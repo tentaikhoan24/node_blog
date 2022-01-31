@@ -1,0 +1,29 @@
+<div class="row mt-4">
+  <div class="col-8 offset-2">
+    <form class="create-course" method="POST" action="/courses/{{this._id}}?_method=PUT">
+      <h3>Chỉnh sửa khóa học</h3>
+      <div class="form-group">
+        <label for="course">Tên khóa học</label>
+        <input type="text" class="form-control" id="name" name="name" required value="{{this.name}}"/>
+      </div>
+      <div class="form-group">
+        <label for="description">Mô tả khóa học</label>
+        <textarea class="form-control" id="description" name="description" required>{{this.description}}</textarea>
+      </div>
+      <div class="form-group">
+        <label for="videoID">Video ID</label>
+        <input type="text" class="form-control" id="videoID" name="videoID" required value="{{this.videoID}}">
+      </div>
+      <div class="form-group">
+        <label for="level-input">Level</label>
+        <select class="form-control" id="level" name="level" >
+          <option value="{{this.level}}">{{this.level}}</option>
+          <option value="Trình độ cơ bản">Trình độ cơ bản</option>
+          <option value="Trình độ trung bình">Trình độ trung bình</option>
+          <option value="Trình độ nâng cao">Trình độ nâng cao</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Lưu lại</button>
+    </form>
+  </div>
+</div>

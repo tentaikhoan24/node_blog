@@ -1,0 +1,14 @@
+
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://tentaikhoan24:<password>@cluster0.0nmff.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
+// https://www.thumbzilla.com/video/ph61580cee3aee8/trick-or-fuck-babe-hot-scarecrow-girl-gets-cum-on-perfect-tits
+
+
+mongodb+srv://tentaikhoan24:ase1234567899@cluster0.0nmff.mongodb.net/education?retryWrites=true&w=majority
