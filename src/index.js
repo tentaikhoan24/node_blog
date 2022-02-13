@@ -7,7 +7,7 @@ const handlebars = require('express-handlebars');
 const SortMiddleware = require('./app/middlewares/SortMiddleware')
 const route = require('./routes');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 const database = require('./config/database');
 const createErrors = require('http-errors');
 require('dotenv').config();
@@ -74,3 +74,9 @@ route(app);
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`);
 });
+
+process.on('SIGTERM', () => {
+  server.close(() => {
+    console.log('Process terminated')
+  })
+})
